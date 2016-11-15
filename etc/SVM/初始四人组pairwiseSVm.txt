@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    16
+Attributes:   5
+              0
+              1
+              2
+              3
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          14               87.5    %
+Incorrectly Classified Instances         2               12.5    %
+Kappa statistic                          0.6   
+Mean absolute error                      0.125 
+Root mean squared error                  0.3536
+Relative absolute error                 31.1213 %
+Root relative squared error             78.6081 %
+Total Number of Instances               16     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.5       0          1         0.5       0.667      0.75     +1
+                 1         0.5        0.857     1         0.923      0.75     -1
+Weighted Avg.    0.875     0.375      0.893     0.875     0.859      0.75 
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  2  2 |  a = +1
+  0 12 |  b = -1
+  
+==========RESULT:============
+1--stackoverflow---1--programmer
+3--stackoverflow---3--programmer
+4--programmer---4--stackoverflow
+2--stackoverflow---2--programmer
+ACCUARCY: 1.0

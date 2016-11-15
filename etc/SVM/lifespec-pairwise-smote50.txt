@@ -1,0 +1,100 @@
+smote84=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature-weka.filters.supervised.instance.SMOTE-C0-K5-P4200.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    12276
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 12.66 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8568               69.7947 %
+Incorrectly Classified Instances      3708               30.2053 %
+Kappa statistic                          0.3954
+Mean absolute error                      0.3021
+Root mean squared error                  0.5496
+Relative absolute error                 60.4152 %
+Root relative squared error            109.9229 %
+Total Number of Instances            12276     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.744     0.349      0.684     0.744     0.713      0.698    +1
+                 0.651     0.256      0.714     0.651     0.681      0.698    -1
+Weighted Avg.    0.698     0.303      0.699     0.698     0.697      0.698
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4609 1583 |    a = +1
+ 2125 3959 |    b = -1
+ 
+Accuracy = 96.4972303681981% (11846/12276) (classification)
++1 ACCUARCY:0.9896640826873385(6128/6192)
+
+==========RESULT:============
+962--movie---962--book
+574--movie---574--book
+ACCUARCY: 0.027777777777777776
+
+
+=>不smote的话：
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 100.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    6156
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.52 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6079               98.7492 %
+Incorrectly Classified Instances        77                1.2508 %
+Kappa statistic                         -0.0015
+Mean absolute error                      0.0125
+Root mean squared error                  0.1118
+Relative absolute error                 53.7051 %
+Root relative squared error            104.0235 %
+Total Number of Instances             6156     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0.001      0         0         0          0.5      +1
+                 0.999     1          0.988     0.999     0.994      0.5      -1
+Weighted Avg.    0.987     0.988      0.977     0.987     0.982      0.5  
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0   72 |    a = +1
+    5 6079 |    b = -1
+	
+Accuracy = 98.83040935672514% (6084/6156) (classification)
++1 ACCUARCY:0(0/72)
+
+==========RESULT:============
+1239--book---1239--movie
+ACCUARCY: 0.013888888888888888

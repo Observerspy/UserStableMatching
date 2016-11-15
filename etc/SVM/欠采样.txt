@@ -1,0 +1,265 @@
+C=5=4
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    452
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         383               84.7345 %
+Incorrectly Classified Instances        69               15.2655 %
+Kappa statistic                          0.085 
+Mean absolute error                      0.1527
+Root mean squared error                  0.3907
+Relative absolute error                 56.7535 %
+Root relative squared error            106.7604 %
+Total Number of Instances              452     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.056     0.003      0.8       0.056     0.104      0.526    +1
+                 0.997     0.944      0.848     0.997     0.917      0.526    -1
+Weighted Avg.    0.847     0.794      0.84      0.847     0.787      0.526
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   4  68 |   a = +1 竖着是精确率 横着是召回率
+   1 379 |   b = -1
+   
+c=3=2
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    300
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         228               76      %
+Incorrectly Classified Instances        72               24      %
+Kappa statistic                          0.1036
+Mean absolute error                      0.24  
+Root mean squared error                  0.4899
+Relative absolute error                 65.6036 %
+Root relative squared error            114.6937 %
+Total Number of Instances              300     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.111     0.035      0.5       0.111     0.182      0.538    +1
+                 0.965     0.889      0.775     0.965     0.859      0.538    -1
+Weighted Avg.    0.76      0.684      0.709     0.76      0.697      0.538
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   8  64 |   a = +1
+   8 220 |   b = -1
+   
+ c=1
+ === Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    148
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          89               60.1351 %
+Incorrectly Classified Instances        59               39.8649 %
+Kappa statistic                          0.1989
+Mean absolute error                      0.3986
+Root mean squared error                  0.6314
+Relative absolute error                 79.7617 %
+Root relative squared error            126.281  %
+Total Number of Instances              148     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.514     0.316      0.607     0.514     0.556      0.599    +1
+                 0.684     0.486      0.598     0.684     0.638      0.599    -1
+Weighted Avg.    0.601     0.403      0.602     0.601     0.598      0.599
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 37 35 |  a = +1
+ 24 52 |  b = -1
+=>SVM_P 
+Accuracy = 74.32432432432432% (110/148) (classification)
++1: 54 total +1: 72
++1 ACCUARCY:0.75
+AVAERAGE:0.7513888888888889
+=>SM
+ACCUARCY: 0.8472222222222222(61/72)
+=>SMEX: 765,1258,1030
++1: 63 ACCUARCY: 0.875(效果提升！)
+
+========1000===========
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    1259
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.24 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         696               55.282  %
+Incorrectly Classified Instances       563               44.718  %
+Kappa statistic                          0.0982
+Mean absolute error                      0.4472
+Root mean squared error                  0.6687
+Relative absolute error                 89.5047 %
+Root relative squared error            133.7942 %
+Total Number of Instances             1259     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.402     0.304      0.555     0.402     0.466      0.549    +1
+                 0.696     0.598      0.551     0.696     0.615      0.549    -1
+Weighted Avg.    0.553     0.455      0.553     0.553     0.543      0.549
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 246 366 |   a = +1
+ 197 450 |   b = -1
+=>SVM_P
+Accuracy = 60.444797458300236% (761/1259) (classification)
++1: 307 total +1: 612
++1 ACCUARCY:0.5016339869281046
+=>SM
++1: 492 ACCUARCY: 0.838160136286201(492/587)
+=>SMEX 7730,17647,25618,14133,1239,6107,18199,17649,1030,77
++1: 504 ACCUARCY: 0.858603066439522 EX2
+
+7730,17647,25618,14133,1239,6107,18199,17649,1030,77,28611,11644,1677,3634,4288,26572,18317,15585
++1: 511 ACCUARCY: 0.870528109028960 EX1
+
+28944,3091,346,7730,11644,994,77,25618,14133,17647,17649,3634,18199,28611,18317,1239,2258,6107,26572,1030,9127,15585,4133,8327,1677,4288,8808,11681
++1: 520 ACCUARCY: 0.885860306643952 EX0
+
+
+========10000====================
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     SiftFeature
+Instances:    10965
+Attributes:   3
+              0
+              1
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 13.31 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6573               59.9453 %
+Incorrectly Classified Instances      4392               40.0547 %
+Kappa statistic                          0.188 
+Mean absolute error                      0.4005
+Root mean squared error                  0.6329
+Relative absolute error                 80.1764 %
+Root relative squared error            126.6305 %
+Total Number of Instances            10965     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.364     0.179      0.658     0.364     0.469      0.593    +1
+                 0.821     0.636      0.578     0.821     0.678      0.593    -1
+Weighted Avg.    0.599     0.414      0.617     0.599     0.577      0.593
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1939 3385 |    a = +1
+ 1007 4634 |    b = -1
+=>SVM_P
+Accuracy = 60.93935248518012% (6682/10965) (classification)
++1: 2193 total +1: 5324
++1 ACCUARCY:0.41190833959429
+AVAERAGE:0.4119459053343351
+=>SM
++1: 4183 ACCUARCY: 0.8125485625485626(4183/5148)
+=>SMEX
+acq size:30
++1: 4216 ACCUARCY: 0.8187997669450379 EX3
+acq size:88
++1: 4275 ACCUARCY: 0.8304195804195804 EX4
+acq size:131
++1: 4316 ACCUARCY: 0.8377329192546584 EX2
+acq size:170
++1: 4353 ACCUARCY: 0.8440954043048284 EX0
+acq size:218
++1: 4400 ACCUARCY: 0.8523827973653623 EX-1
+acq size:235
++1: 4417 ACCUARCY: 0.8555103621925237 EX1
+acq size:268
++1: 4449 ACCUARCY: 0.860541586073501 EX-2
+acq size:298
++1: 4471 ACCUARCY: 0.8642953798569496 EX-10
+acq size:320
++1: 4494 ACCUARCY: 0.8684057971014493 EX-9
+50893,168020,217653,46667,939,165079,90257,2962,55484,295243,59911,117434,238706,147923,176840,28816,235366,98506,244298,128065,214553,155846,216593,261310,126043,25089,172953,223868,9774,206707,133336,994,78303,259972,119686,504,112879,204612,189369,75124,161544,55743,55740,17686,163105,227536,98641,202474,189346,92791,254602,297071,95718,197840,154759,215118,278530,144919,167347,14713,237631,125443,200228,263586,226857,274094,268314,256918,265116,11644,276704,165821,265121,174631,91615,191976,211436,26113,37055,91206,131725,81119,215980,27683,164764,257921,244407,193875,140446,138779,255797,58461,127091,176718,868,274171,96596,176223,882,272790,261453,209333,118229,187290,173383,65515,216688,55834,55835,263706,95414,268539,113386,49290,25521,253260,92215,116920,279874,89848,115842,240552,221283,250023,47851,186739,21233,77585,186749,233766,7844,60086,199832,172137,67805,256816,86532,215072,258104,92298,218921,17332,285669,202501,255722,94939,262005,91334,78185,70326,156525,35393,169230,91748,197100,259717,175926,40131,148363,216771,272174,136855,43975,251722,176527,121457,137012,172780,85820,58653,205404,112552,254441,149476,166609,58647,208331,169792,165555,93694,24449,3897,92456,1638,261567,179459,263010,49585,146110,150774,113272,130888,9535,100201,241830,162800,179791,47973,241061,30171,61541,54896,115944,44744,266849,47511,18910,288709,178383,161268,98885,122573,185580,133970,273274,228038,81336,92940,37212,14012,144781,257165,5969,98336,91007,143613,130104,143219,18988,222510,34398,136368,105810,107905,90867,255616,117331,293133,195005,176966,138569,176421,254510,190960,55117,176441,46072,36327,245256,255969,237244,150926,168308,285873,257184,89693,131504,14798,258745,246038,47583,296437,93147,63555,49808,118482,128305,166291,12529,280097,239979,179870,297554,155938,81539,40887,93185,3195,204905,187034,6107,73207,261273,261274,9934,168753,242056,207304,266554,260937,25330,233988,161121,248662,270253,216005,240384,159963,152148,156780,128213,45722,270698,154192,48635,70573,26051,257786,84718,136935,22631,64259,42538,176063,1034,5458,240308,101047,14848,147002
